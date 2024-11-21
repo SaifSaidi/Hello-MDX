@@ -1,0 +1,154 @@
+# Hello MDX Syntax
+
+This document covers various formatting options available in MDX.
+
+## 1. Basic Text Formatting
+
+MDX supports standard Markdown text formatting:
+
+- **Bold text** is created with \*\*double asterisks\*\* or \_\_double underscores\_\_
+- *Italic text* uses \*single asterisks\* or \_single underscores\_
+- ***Bold and italic*** combines both: \*\*\*triple asterisks\*\*\* or \_\_\_triple underscores\_\_\_
+- ~~Strikethrough~~ uses \~\~double tildes\~\~
+
+## 2. Headings
+
+MDX supports six levels of headings, just like Markdown:
+
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+
+## 3. Lists
+
+### Unordered Lists
+
+- Item 1
+- Item 2
+  - Subitem 2.1
+  - Subitem 2.2
+- Item 3
+
+### Ordered Lists
+
+1. First item
+2. Second item
+   1. Subitem 2.1
+   2. Subitem 2.2
+3. Third item
+
+## 4. Links
+
+MDX supports various types of links:
+
+- [Basic link](https://mdxjs.com)
+- [Link with title](https://mdxjs.com "MDX Documentation")
+- Reference-style link [MDX][1]
+
+[1]: https://mdxjs.com
+
+## 5. Images
+
+Images in MDX can be added using Markdown syntax:
+
+![Alt text](/placeholder.svg "Optional title")
+
+## 6. Blockquotes
+
+> This is a blockquote. It can span multiple lines and can contain other Markdown elements.
+
+## 7. Code
+
+### Inline Code
+
+Use backticks for `inline code`.
+
+### Code Blocks
+
+For code blocks, use triple backticks with an optional language specifier:
+
+```javascript
+function greet(name) {
+  console.log(`Hello, \${name}!`);
+}
+
+greet('World');
+```
+
+## 8. Horizontal Rules
+
+Create horizontal rules with three or more hyphens, asterisks, or underscores:
+
+---
+
+## 9. Tables
+
+| Header 1 | Header 2 |
+|----------|----------|
+| Row 1, Column 1 | Row 1, Column 2 |
+| Row 2, Column 1 | Row 2, Column 2 |
+
+## 10. Task Lists
+
+- [x] Completed task
+- [ ] Incomplete task
+
+## 11. Footnotes
+
+MDX supports footnotes[^1] for additional information.
+
+[^1]: This is a footnote.
+
+## 12. HTML in MDX
+
+MDX allows you to use HTML directly in your markdown:
+
+<div style="padding: 20px; background-color: #f0f0f0; border-radius: 5px;">
+  <h3>This is a custom HTML block</h3>
+  <p>You can use HTML to create custom layouts or styling within your MDX.</p>
+</div>
+
+## 13. Importing and Using JavaScript
+
+MDX allows you to import and use JavaScript modules:
+
+```mdx
+import { Component } from './Component'
+
+# My Component
+
+Here's a component:
+
+<Component data={[1, 2, 3]} />
+```
+
+## 14. Frontmatter
+
+MDX supports frontmatter for metadata:
+
+```yaml
+---
+title: MDX Syntax Guide
+author: author name
+date: yyyy-mm-dd
+---
+```
+
+## 15. Math Equations
+
+Some MDX processors support LaTeX-style math equations:
+
+Inline equation: $E = mc^2$
+
+Block equation:
+
+$$
+\frac{n!}{k!(n-k)!} = \binom{n}{k}
+$$
+
+## Conclusion
+
+This guide covers the main syntax features of MDX in english.
